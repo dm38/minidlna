@@ -100,5 +100,8 @@ int make_dir(char * path, mode_t mode);
 int copy_file(const char *src_file, const char *dst_file);
 int link_file(const char *src_file, const char *dst_file);
 unsigned int DJBHash(uint8_t *data, int len);
+#ifdef THUMBNAIL_CREATION
+int rename_artcache_dir(const char * oldpath, const char * newpath);
+#endif
 
 #endif
