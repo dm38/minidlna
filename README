@@ -45,3 +45,4 @@ Features
 - add option to ignore certain paths from scanning
 - add possibility to serve multiple-sized thumbnails based on client request
 - support additional video containers like 'Tv Shows' and 'Movies' if metadata is available
+- support dynamic icons by loading from pkgdatadir/icons
