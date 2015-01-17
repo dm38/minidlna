@@ -458,7 +458,7 @@ writepidfile(const char *fname, int pid, uid_t uid)
 static void read_file(img_t* img, const char* dir, const char *filename) {
 	char path[1024];
 	sprintf( path, "%s/%s", dir, filename);
-	FILE *file = fopen(path, "rb");
+	FILE *file = fopen(path, "rb-");
 	if(!file) {
 		char err[1024];
 		sprintf(err, "Failed to open path %s", path);
